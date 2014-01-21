@@ -46,7 +46,7 @@ def websocket_open(client, clients_list):
 
 
 @mease.receiver
-def websocket_message(client, message, clients_list):
+def websocket_message(client, clients_list, message):
     print(message)
     client.send("ECHO")
 
