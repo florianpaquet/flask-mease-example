@@ -1,3 +1,4 @@
+colorlog==2.0.0
 Flask==0.10.1
 mease==0.1.0
 redis==2.9.0
