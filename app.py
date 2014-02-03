@@ -10,7 +10,7 @@ mease = Mease(RedisBackend, {})
 
 @app.route("/")
 def hello():
-    mease.publish('flask.test', message="HELLO WORLD !")
+    mease.publish(routing='flask.test', message="HELLO WORLD !")
     return render_template('hello.html')
 
 
